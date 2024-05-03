@@ -82,3 +82,11 @@ An example HTTP response:
 }
 
 ```
+
+
+## Developer Notes
+
+* Promise to resolve to resolve an array of urls which will be passed to httpGet function.
+* Once the response is received, check the status code of the response.
+* If the status code is 200, push an object to the results array with a single key `"Arnie Quote"` and the HTTP response body's `message` property as the key's associated value.
+
