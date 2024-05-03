@@ -14,7 +14,7 @@ const fetchListOfUrls = async (urls) => {
 };
 
 const getArnieQuotes = async (urls) => {
-  return await Promise.all(await fetchListOfUrls(urls));
+  return (await Promise.all(await fetchListOfUrls(urls))) ?? [];
 };
 
 module.exports = {
